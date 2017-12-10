@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Suez+One');
+@import 'https://fonts.googleapis.com/css?family=Roboto+Slab|Suez+One';
 
 * {
 	margin: 0;
@@ -6,54 +6,38 @@
 }
 
 body {
-	width: 100%;
-	height: 100%;
+	background-color: #f6f6f6;
 }
 
 a {
-	color: #fa713e;
+	color: #c34f25;
 	text-decoration: none;
-	transition: all.3s ease;
-	-ms-transition:all.3s ease;
-	-o-transition:all.3s ease;
-	-moz-transition: all.3s ease;
-	-webkit-transition: all.3s ease;
+	transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-webkit-transition: all.6s ease;
 }
 
 a:hover {
-	color: #c34f25;
+	color: #fa713e;
 	text-decoration: none;
-	transition: all.1.5s ease;
-	-ms-transition:all.1.5s ease;
-	-o-transition:all.1.5s ease;
-	-moz-transition: all.1.5s ease;
-	-webkit-transition: all.1.5s ease;
+	transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-webkit-transition: all.6s ease;
 }
 
-img {
-	max-width: 100%;
-	height: auto;
-	width: auto\9; /*ie8 */
-	-moz-transition: all 3s ease-out;
-	-o-transition:all 3s ease-out;
-	-webkit-transition: all 3s ease-out;
-}
-
-hr {
-	display: block;
-	height: 1px;
-	border: 0;
-	border-top: 1px solid #ccc;
-	margin: 1em 0;
-	padding: 0;
-}
+/* Стили для шапки сайта */
 
 header {
 	float: left;
 	background-color: #343434;
 	width: 99.4%;
 	padding: 0.3%;
-	border-bottom: 5px solid #59595a;	
+	border-bottom: 5px solid #59595a;
+	font-family: 'Roboto Slab', serif;
 }
 
 header>div#logo>a>img {
@@ -61,6 +45,7 @@ header>div#logo>a>img {
 	height: 50px;
 	float: left;
 }
+
 header>div#logo>a {
 	color: white;
 }
@@ -71,35 +56,72 @@ header>div#logo>a>span {
 	font-family: 'Suez One', serif;
 }
 
-header>div#logo>a>img {
-	margin-left: 15%;
-}
- 
-
-
-#logo {
-	float: left;
-	width: 30%;
-}
-
-#about {
-	float: left;
-	width: 37%;
-}
-
-#reg_auth {
-	float: right;
-	width: 30%;
-}
-
+@media (min-width: 950px) {
+	header>div#logo>a>img {
+		margin-left: 15%;
+	}
+	
+	#logo {
+		float: left;
+		width: 30%;
+	}
+	
+	#about {
+		float: left;
+		width: 37%;
+	}
+	
+	#reg_auth {
+		float: right;
+		width: 30%;
+	}
 }
 
+@media (max-width: 949px) and (min-width: 525px) {
+	header>div#logo>a>img {
+		margin-left: 15%;
+	}
+	
+	#logo {
+		float: left;
+		width: 50%;
+	}
+	
+	#about {
+		visibility: hidden;
+		display: none;
+	}
+	
+	#reg_auth {
+		float: right;
+		width: 50%;
+	}
+}
+
+@media (max-width: 524px) {
+	header>div#logo>a>img {
+		margin-left: 5%;
+	}
+	
+	#logo {
+		width: 100%;
+	}
+	
+	#about {
+		visibility: hidden;
+		display: none;
+	}
+	
+	#reg_auth {
+		visibility: hidden;
+		display: none;
+	}
+}
 
 #about {
 	text-align: center;
-	font-family: 'Roboto Slab', serif;
 	font-size: 1.4em;
-	padding-top: 10px; 
+	padding-top: 10px;
 }
 
 #about>a {
@@ -107,8 +129,8 @@ header>div#logo>a>img {
 }
 
 #about>a:hover {
-color: #dfdfdf;
-border-botom:1px solid silver;
+	color: #dfdfdf;
+	border-bottom: 1px solid silver;
 }
 
 #about>a:last-child {
@@ -119,26 +141,28 @@ border-botom:1px solid silver;
 	color: white;
 }
 
-#reg_auth>div.btn>a:hover{
+.btn:hover {
 	border-bottom: 2px solid rgba(217, 91, 72, 1);
 	margin-top: 7px;
 }
 
-#reg_auth>div.btn>a:active{
+.btn:active {
 	border-bottom: 0;
 	margin-top: 9px;
 }
 
-#reg_auth>div.btn>a{
-	color: white;
+.btn {
 	float: right;
 	margin-right: 3%;
 	margin-top: 5px;
 	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 	padding: 5px 9px;
 	font-size: 1.2em;
 	background-color: rgba(236, 101, 80, 1);
 	text-shadow: #454545 0 0 2px;
 	border-bottom: 4px solid rgba(217, 91, 72, 1);
+	color: white;
 	font-family: 'Roboto Slab', serif;
 }
