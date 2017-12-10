@@ -75,11 +75,7 @@ header>div#logo>a>img {
 	margin-left: 15%;
 }
  
-/*@media(min-width: 950px){
 
-header>div#logo>a>img {
-	margin-left: 15%;
-}
 
 #logo {
 	float: left;
@@ -98,47 +94,7 @@ header>div#logo>a>img {
 
 }
 
-@media(max-width: 949px) and (min-width:525px){
-header>div#logo>a>img {
-	margin-left: 15%;
-}
 
-#logo {
-	float: left;
-	width: 50%;
-}
-
-#about {
-	visibility: hidden;
-	display: none;
-}
-
-#reg_auth {
-	float: right;
-	width: 50px;
-}
-
-@media(max-width: 524px){
-header>div#logo>a>img {
-	margin-left: 5%;
-}
-
-#logo {
-	width: 100%;
-}
-
-#about {
-	visibility: hidden;
-	display: none;
-}
-
-#reg_auth {
-	visibility: hidden;
-	display: none;
-}
-
-}
-*/
 #about {
 	text-align: center;
 	font-family: 'Roboto Slab', serif;
