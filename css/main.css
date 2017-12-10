@@ -70,6 +70,10 @@ header>div#logo>a>span {
 	margin-left: 10px;
 	font-family: 'Suez One', serif;
 }
+
+header>div#logo>a>img {
+	margin-left: 15%;
+}
  
 /*@media(min-width: 950px){
 
